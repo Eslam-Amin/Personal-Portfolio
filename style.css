@@ -125,6 +125,7 @@ hr {
     width: max-content;
     margin: auto;
     margin-top: 25px;
+    font-size: 1rem;
 }
 .experienceP {
     margin: auto;
@@ -168,7 +169,6 @@ hr {
     margin: 25px;
     display: flex;
     justify-content: center;
-    /*text-align: center;*/
     align-items: center;
     flex-wrap:wrap;
 }

@@ -54,4 +54,7 @@ const goUp = function () {
     alert.appendChild(alertBtn)
 
     document.body.appendChild(alert)
-  }
+    document.getElementById("txtName").value = "";
+
+    document.getElementById("txtRecommendation").value = "";
+}
