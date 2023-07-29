@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 10px 0;
+    width: 100%;
+    background-color: #32323d ;
+    height: 90px;
+
+}
+
+#personalInfo {
+    width: 75%;
+    margin-left: 50px;
+    align-self: center;
+    color: beige;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info img {
+    width: 15px;
+    height: 12px;
+}
+
+.info p {
+    font-size: 10px;
+}
+
+#pageTabs {
+    float: right;
+    width: 40%;
+    align-self: center;
+
+}
+
+#pageTabs a {
+    margin: 20px;
+    color: beige;
+    text-decoration: none;
+}
+
+
+#pageTabs a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+#aboutMeSection {
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+h2 {
+    color: #32323d;
+}
+
+#aboutMeSection img {
+    width: 250px;
+    height: 250px;
+
+}
+#aboutMe p{
+    width: 100%;
+}
+
+hr {
+
+    border: 1px solid #32323d;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+
+
+#skillsSection {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+#skillCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skillCard {
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: .5px solid #32323d;
+    margin: 10px;
+    margin-bottom: 25px;
+    box-shadow: -3px 5px 8px #888888;
+}
+
+
+.skillCard img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.skillCard p {
+    width: max-content;
+    margin: auto;
+    margin-top: 25px;
+}
+.experienceP {
+    margin: auto;
+    width: fit-content;
+    font-size: small;
+}
+
+#projectsSection {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.projectContent {
+    margin: 25px;
+}
+
+.projectContent ul {
+    margin-left: 5%;
+}
+
+#recommendationsSection {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#recommendCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.recommendCard {
+    width: 25%;
+    border: 1px solid #32323d;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+
+.recommendCard p{
+    font-style: italic;
+}
+
+.recommendCard p:before {
+    content: open-quote;
+}
+
+.recommendCard p:after {
+    content: close-quote;
+}
+
+.recommendCard h5{
+    padding: 5px;
+    
+
+}
+#leaveRecommendationSection{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+#leaveRecommendationSection input{
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid #32323d;
+
+}
+#leaveRecommendationSection textarea{
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid #32323d;
+
+
+}
+#leaveRecommendationSection button{
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #32323d;
+    font-weight: bold;
+    border:1px solid #32323d;
+    margin-bottom: 50px;
+}
+
+
+#goUpBtn {
+    float:right;
+    margin:25px;
+    background-color: transparent;
+    border:none;
+      
+}
+#goUpBtn img{
+    width:50px;
+    height: 50px;
+
+}
+
+
+.alert{
+    position:fixed;
+    top:50%;
+    left:50%;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 10px 5px 0 #000022;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    transform: translateX(-50%);
+    background-color : #32323d;
+    color: beige;
+}
+.alert button{
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    padding :5px;
+}
+@media only screen and (max-width: 600px){
+
+    #aboutMeSection {
+        flex-wrap: wrap;
+    }
+    #aboutMeSection img{
+        width: 100%;
+        height: min-content;
+    }
+    #aboutMe p {
+        width: 100%;
+    }
+
+    #skillCard{
+        justify-content: center;
+    }
+    .skillCard{
+        width: 50%;
+    }
+    #recommendCard {
+        justify-content: center;
+    }
+    .recommendCard{
+        width: 80%;
+    }
+    #leaveRecommendationSection{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

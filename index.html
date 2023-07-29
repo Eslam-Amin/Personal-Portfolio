@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+    <nav>
+        <div id="personalInfo">
+            <h3>Eslam Amin</h3>
+            <div class="info">
+                <img src="images/mail.png">
+                <p>ea.eslamamin@gmail.com</p>
+            </div>
+            <div class="info">
+                <img src="images/phone.png">
+                <p>+201099007326</p>
+
+            </div>
+        </div>
+        <div id="pageTabs">
+            <a href="#aboutMeSection"> about me</a>
+            <a href="#skillsSection"> Skills</a>
+            <a href="#projectsSection"> Projects</a>
+            <a href="#recommendationsSection">Recommendations</a>
+        </div>
+    </nav>
+    <div id="aboutMeSection">
+
+        <img src="images/programmer.png">
+
+        <div id="aboutMe">
+            <h2>Hi, I'm Eslam Amin</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet mauris sit amet mi mollis
+                consequat. Aliquam lobortis sem felis, porttitor faucibus urna lacinia vitae. Mauris porttitor fringilla
+                interdum. Curabitur vitae magna pretium, posuere magna at, pellentesque turpis. Proin quam velit,
+                ultricies ut arcu vitae, pulvinar scelerisque tellus. Cras accumsan luctus quam congue rutrum. Nam
+                consectetur tellus sed augue varius, quis lacinia dolor imperdiet. Aliquam maximus aliquam pharetra.
+                Nullam vulputate ut eros at tempus. Nulla a odio ultrices, posuere ex ac, elementum ex. Cras nec tortor
+                vel velit dignissim tempor eget nec eros.
+            </p>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div id="skillsSection">
+        <h2>Skills</h2>
+        <div id="skillCard">
+            <div class="skillCard">
+                <img src="images/HTML5_logo_and_wordmark.svg">
+                <p>HTML</p>
+                <p class="experienceP">4 Years Experience</p>
+            </div>
+            <div class="skillCard">
+                <img src="images/CSS.3.svg">
+                <p>CSS</p>
+                <p class="experienceP">4 Years Experience</p>
+            </div>
+            <div class="skillCard">
+                <img src="images/Javascript.svg">
+                <p>JS</p>
+                <p class="experienceP">3 Years Experience</p>
+            </div>
+            <div class="skillCard">
+                <img src="images/Bootstrap.svg">
+                <p>Bootstrap</p>
+                <p class="experienceP">3 Years Experience</p>
+            </div>
+            <div class="skillCard">
+                <img src="images/Node.js.svg">
+                <p>NodeJs</p>
+                <p class="experienceP">2 Years Experience</p>
+            </div>
+            <div class="skillCard">
+                <img src="images/React.svg">
+                <p>React</p>
+                <p class="experienceP">1 Year Experience</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <hr>
+    <div id="projectsSection">
+        <h2>Projects</h2>
+        <div class="projectContent">
+            <h3>Back-End Service</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, risus sit amet molestie
+                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula. Nullam mattis id velit
+                    quis porttitor. </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="projectContent">
+            <h3>To-Do List</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, risus sit amet molestie
+                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula. Nullam mattis id velit
+                    quis porttitor. </li>
+            </ul>
+
+        </div>
+        <hr>
+        <div class="projectContent">
+            <h3>Mat3amy</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, risus sit amet molestie
+                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula. Nullam mattis id velit
+                    quis porttitor. </li>
+            </ul>
+
+        </div>
+    </div>
+    <hr>
+    <div id="recommendationsSection">
+        <h2>Recommendations</h2>
+        <div id="recommendCard">
+
+            <div class="recommendCard">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                </p>
+                <h5>Good Person</h5>
+
+            </div>
+            <div class="recommendCard">
+                <p>
+                    Nunc suscipit, risus sit amet molestie
+                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula.
+                </p>
+                <h5>Anonymous</h5>
+
+            </div>
+            <div class="recommendCard">
+                <p>
+                    Lorem ipsum dolor sit amet, lorem est mollis nisl, in pellentesque tortor justo non ligula.
+                </p>
+                <h5>Gwen Stacy</h5>
+
+            </div>
+            <div class="recommendCard">
+                <p>
+                    Lorem ipsum dolor. 
+                </p>
+                <h5>Paulo Kehlou</h5>
+            </div>
+            <div class="recommendCard">
+                <p>
+                    I adore Esraa Sayed. 
+                </p>
+                <h5>Eslam Amin</h5>
+            </div>
+            
+        </div>
+        <div id="leaveRecommendationSection">
+
+            <h2>Leave a Recommendation</h2>
+            <input type="text" placeholder="Name (optional)" id="txtName">
+            <br>
+            <textarea placeholder="Message" cols="11" rows="11" id=txtRecommendation></textarea>
+            <button onclick="leaveRecommend()"> Submit</button>
+        </div>
+    </div>
+
+    <button onclick="goUp()" id="goUpBtn">
+        <img src="images/upArrow.svg">
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
