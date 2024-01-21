@@ -457,6 +457,11 @@ margin-bottom: 10px;
      #aboutMe h2 {
         margin-top: 20px;
     }
+    .aboutMeSectionLinks ul{
+                flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
      .aboutMeSectionLinks ul li{
         margin:10px;
         width: 50%;
