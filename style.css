@@ -210,15 +210,15 @@ hr {
     margin-top: 50px;
 }
 
-
 #skillCard {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .skillCard {
-    width: 12%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -226,19 +226,21 @@ hr {
     margin: 10px;
     margin-bottom: 25px;
     box-shadow: -3px 5px 8px #888888;
+    align-items: flex-start;
+
+}
+.skillCardItem {
+    display: flex;
 }
 
-
-.skillCard img {
+.skillCardItem img {
     width: 25px;
     height: 25px;
-    margin-bottom: 30px;
     margin: auto;
 }
 
-.skillCard p {
-    margin: auto;
-    margin-top: 25px;
+.skillCardItem p {
+    margin: 10px 5px;
     font-size: 1rem;
 }
 .experienceP {
@@ -447,7 +449,6 @@ margin-bottom: 10px;
         align-items: center;
        
     }
-    
     #personalInfo h3{
         text-align: center;
     }
@@ -480,18 +481,26 @@ margin-bottom: 10px;
     #skillCard{
         justify-content: center;
     }
+    .skillCardItem{
+        margin-left:20%;
+    }
     .skillCard{
         width: 50%;
     }
 
     .certificateList{
+        align-items: center;
         width: 100%;
-        justify-content:   space-between;
-        margin: 10px;
+        margin:auto;
+        margin-top: 10px;
         flex-direction: column;
     }
     .certificateName{
-        margin-left: 20px;
+        margin-left: 30px;
+    }
+
+    .certificateContent{
+        margin-left: 0px;
     }
     
     #recommendCard {
