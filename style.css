@@ -13,11 +13,82 @@ nav {
 
 }
 
+
+
+
+.square{
+    width: 60px;
+height: 60px;
+background-color: #4e6bff;
+opacity: 0.7;
+position: absolute;
+top: -60;
+left: -60;
+z-index: -1;
+animation: square 25s linear alternate infinite;
+}
+
+@keyframes square {
+    to{
+        transform: translate(100vw, 100vh);
+    }
+
+    
+}
+
+.circle{
+    
+width: 100px;
+height: 100px;
+background-color: #ff97af;
+position: absolute;
+top: 200px;
+left: -100px;
+z-index: -1;
+border-radius: 50%;
+animation: circle 25s linear alternate infinite;
+}
+
+
+@keyframes circle {
+    to{
+        transform: translate(100vw, -100vh);
+    }
+
+}
+
+.rectangle{
+    
+width: 50px;
+height: 100px;
+background-color: #669966;
+position: absolute;
+top: 400px;
+left: -50px;
+z-index: -1;
+opacity: .5;
+animation: rect 25s linear alternate infinite;
+}
+
+
+@keyframes rectangle {
+    to{
+        transform: translate(100vw, -50vh);
+    }
+
+
+}
+
 #personalInfo {
     width: 75%;
     margin-left: 50px;
     align-self: center;
     color: beige;
+    overflow: hidden;
+}
+
+#personalInfo h3{
+   font-size: 25px;
 }
 
 .info {
@@ -32,12 +103,12 @@ nav {
 }
 
 .info p {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #pageTabs {
     float: right;
-    width: 40%;
+    width: 60%;
     align-self: center;
 
 }
@@ -67,6 +138,7 @@ nav {
 
 #aboutMeSection h2{
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -80,7 +152,44 @@ h2 {
 }
 #aboutMe p{
     width: 100%;
+    margin-left: 25px;
+    line-height: 1.5;
+
 }
+
+
+.aboutMeSectionLinks{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMeSectionLinks ul{
+    list-style: none;
+    display: flex;
+    
+   
+}
+
+.aboutMeSectionLinks img{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.aboutMeSectionLinks ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 0px 10px;
+    
+}
+
+
 
 hr {
 
@@ -140,20 +249,62 @@ hr {
     margin: auto;
     width: 75%;
     margin-top: 50px;
+    position: relative;
 }
 
 .projectContent {
     margin: 25px;
 }
 
-.projectContent ul {
+
+.projectContent ul, .certificateContent {
     margin-left: 5%;
+}
+
+
+.projectContent ul>:first-child{
+    font-size: 17px;
+}
+.projectContent ul li{
+    line-height: 1.4;
+    margin: 5px;
+}
+
+
+.certificateContent{
+    margin-top:15px;
+}
+.certifications {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+    position: relative;
+}
+.certificateContent p{
+    font-weight: 500;
+}
+
+
+.certificateContent ul li{
+      line-height: 1.4;
+        margin: 5px;
+}
+
+.certificateList{
+    margin-left: 10%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content:   space-between;
+    list-style: none;
 }
 
 #recommendationsSection {
     width: 75%;
     margin: auto;
     margin-top: 50px;
+    position: relative;
+    height: 90%;   
 }
 
 #recommendCard {
@@ -203,13 +354,18 @@ hr {
 
 #leaveRecommendationSection input{
     height: 40px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     border:1px solid #32323d;
 
 }
+
+#leaveRecommendationSection h2{
+margin-bottom: 10px;
+
+}
 #leaveRecommendationSection textarea{
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     border:1px solid #32323d;
 
@@ -228,7 +384,6 @@ hr {
     border:1px solid #32323d;
     margin-bottom: 50px;
 }
-
 
 #goUpBtn {
     float:right;
@@ -266,6 +421,28 @@ hr {
 }
 @media only screen and (max-width: 600px){
 
+    #pageTabs{
+        display: none;
+    }
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #personalInfo{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+       
+    }
+    
+    #personalInfo h3{
+        text-align: center;
+    }
     #aboutMeSection {
         flex-wrap: wrap;
     }
@@ -275,6 +452,14 @@ hr {
     }
     #aboutMe p {
         width: 100%;
+        margin: 0 0;
+    }
+     #aboutMe h2 {
+        margin-top: 20px;
+    }
+     .aboutMeSectionLinks ul li{
+        margin:10px;
+        width: 50%;
     }
 
     #skillCard{
@@ -283,6 +468,15 @@ hr {
     .skillCard{
         width: 50%;
     }
+
+    .certificateList{
+        width: 100%;
+            justify-content:   space-between;
+            margin: 0;
+            flex-direction: column;
+
+    }
+    
     #recommendCard {
         justify-content: center;
     }

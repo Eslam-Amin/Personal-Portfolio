@@ -5,27 +5,29 @@
     <title>Personal Portfolio</title>
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/images/avatar.png">
 
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div id="personalInfo">
             <h3>Eslam Amin</h3>
             <div class="info">
                 <img src="images/mail.png">
-                <p>ea.eslamamin@gmail.com</p>
+                <p> ea.eslamamin@gmail.com</p>
             </div>
             <div class="info">
                 <img src="images/phone.png">
-                <p>+201099007326</p>
-
+                <p> (+20) 1099007326</p>
             </div>
         </div>
         <div id="pageTabs">
-            <a href="#aboutMeSection"> about me</a>
+            <a href="#aboutMeSection"> About me</a>
             <a href="#skillsSection"> Skills</a>
             <a href="#projectsSection"> Projects</a>
+            <a href="#certifications">Certifications</a>
+
             <a href="#recommendationsSection">Recommendations</a>
         </div>
     </nav>
@@ -37,17 +39,37 @@
             <h2>Hi, I'm Eslam Amin</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet mauris sit amet mi mollis
-                consequat. Aliquam lobortis sem felis, porttitor faucibus urna lacinia vitae. Mauris porttitor fringilla
-                interdum. Curabitur vitae magna pretium, posuere magna at, pellentesque turpis. Proin quam velit,
-                ultricies ut arcu vitae, pulvinar scelerisque tellus. Cras accumsan luctus quam congue rutrum. Nam
-                consectetur tellus sed augue varius, quis lacinia dolor imperdiet. Aliquam maximus aliquam pharetra.
-                Nullam vulputate ut eros at tempus. Nulla a odio ultrices, posuere ex ac, elementum ex. Cras nec tortor
-                vel velit dignissim tempor eget nec eros.
+                I am a software engineer; I am enthusiast about programming and development. I love coding with Python,
+                C++ to solve
+                problems, I focus on becoming Full Stack Development so most of the time I develop my knowledge with web
+                development, I
+                love using JavaScript in Node.JS as a back-end, and I want to learn more about Angular and react so I
+                can be mean or
+                mern Stack developer, I am self-organized, self-motivated, self-learner, and I work hard every day to be
+                a better
+                version of myself, so I don't compete with others I only compete with myself each day.
             </p>
         </div>
-    </div>
 
+    </div>
+    <div class="aboutMeSectionLinks">
+        <ul>
+            <li>
+                <img src="images/LinkedIn.png" />
+                <a href="">LinkedIn</a>
+            </li>
+            <li>
+                <img src="images/github.svg" />
+
+                <a href="https://github.com/Eslam-Amin">GitHub</a>
+            </li>
+            <li>
+                <img src="images/HackerRank.png" />
+                <a href="https://www.hackerrank.com/profile/EslamAmin">HackerRank</a>
+            </li>
+
+        </ul>
+    </div>
 
     <hr>
 
@@ -94,20 +116,78 @@
     <div id="projectsSection">
         <h2>Projects</h2>
         <div class="projectContent">
+            <h3>Simple Agency React App</h3>
+            <ul>
+                <li>
+                    In the Learning Process of having react as a skill I created this beautiful UI React app to increase
+                    my knowledge with the technology.
+
+                </li>
+                <li>
+                    <b>Used Technologies: </b>
+                    HTML, CSS, JavaScript, And ReactJS.
+                </li>
+                <li>
+                    <a href="https://mellifluous-liger-79b2fd.netlify.app/" target="_blank">
+                        <b>Live Website</b>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <hr>
+        <div class="projectContent">
+
             <h3>Back-End Service</h3>
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, risus sit amet molestie
-                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula. Nullam mattis id velit
-                    quis porttitor. </li>
+                <li>
+                    In 7 Days I managed to create a backend service for a System who Provides online/offline Courses,
+                    Admin Panel to use
+                    CRUD operation using RESTful API for courses and students, assign students to specific course and
+                    the system will check
+                    if course’s prerequisites match student skills. if so, the system will add the student to a course
+                    group which has
+                    available places left, if not the system will add the specific student to rejected document in
+                    database with the
+                    required skill that he’s missing to enroll the course so in the future I can use these data to send
+                    course
+                    recommendation to rejected student. the system has an authorization and authentication to ensure if
+                    the user has a
+                    permission to use a specific feature.
+                </li>
+                <li>
+                    <b>Used Technologies: </b>
+                    Node.js, Express.js, MongoDB, JWT for Authentication and Authorization.
+
+                </li>
+                <li>
+                    <a href="https://github.com/Eslam-Amin/ODC_Back-End_Service" target="_blank">
+                        <b>GitHub Repo</b>
+
+                    </a>
+                </li>
             </ul>
         </div>
         <hr>
         <div class="projectContent">
             <h3>To-Do List</h3>
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, risus sit amet molestie
-                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula. Nullam mattis id velit
-                    quis porttitor. </li>
+                <li>
+                    A to-do list is a simple tool for organizing tasks. Each item includes a task description, priority
+                    level, deadline (if
+                    applicable), and any additional details. It helps you stay focused, manage time, and track progress.
+                    Keep it flexible
+                    and update regularly for optimal productivity.
+                </li>
+                <li>
+                    <b>Used Technologies: </b>
+                    HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                    <a href="https://eslam-amin.github.io/To-do-List/" target="_blank">
+                        <b>Live Website</b>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -115,21 +195,125 @@
         <div class="projectContent">
             <h3>Mat3amy</h3>
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit, risus sit amet molestie
-                    interdum, lorem est mollis nisl, in pellentesque tortor justo non ligula. Nullam mattis id velit
-                    quis porttitor. </li>
+                <li>
+
+                    Mat3amy is a food ordering system, Based on user's choice of orders and what items will be added to
+                    his cart,
+                    With signup and login, you can specify each order to which customer.
+                </li>
+                <li>
+                    <b>Used Technologies: </b>
+                    HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                    <a href="https://eslam-amin.github.io/Mat3amy/" target="_blank">
+                        <b>Live Website</b>
+                    </a>
+                </li>
             </ul>
 
         </div>
+
+    </div>
+    <hr>
+    <div class="certifications" id="certifications">
+
+        <h2>Certifications</h2>
+        <ul class="certificateContent">
+            <li>Front-End Web Developer Nanodegree, <b>Udacity</b>.</li>
+            <ul class="certificateList">
+                <li>
+                    <a href="https://graduation.udacity.com/confirm/DLHANCVP"><b>Certificate</b></a>
+                </li>
+                <li>
+                    <i>September 2022 – November 2022</i>
+                </li>
+            </ul>
+        </ul>
+        <hr>
+        <ul class="certificateContent">
+            <li>The Complete Node.js Course, <b>MaharaTech</b>.</li>
+            <ul class="certificateList">
+                <li>
+                    <a
+                        href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=410164&code=6dnEX9o8gS&qrcode=1"><b>Certificate</b></a>
+                </li>
+                <li>
+                    <i>October 2022</i>
+                </li>
+            </ul>
+
+        </ul>
+        <hr>
+        <ul class="certificateContent">
+            <li>JavaScript Developer, <b>MaharaTech</b>.</li>
+            <ul class="certificateList">
+                <li>
+                    <a
+                        href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=259530&code=boUtPx75r6&qrcode=1"><b>Certificate</b></a>
+                </li>
+                <li>
+                    <i>November 2022</i>
+                </li>
+            </ul>
+
+        </ul>
+        <hr>
+        <ul class="certificateContent">
+            <li>React JS Course, <b>MaharaTech</b>.</>
+                <ul class="certificateList">
+                    <li>
+                        <a
+                            href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=194868&code=cpFbfDYLhg&qrcode=1"><b>Certificate</b></a>
+                    </li>
+                    <li>
+                        <i>January 2023</i>
+                    </li>
+                </ul>
+
+        </ul>
+        <hr>
+        <ul class="certificateContent">
+            <li>Front-End Developer, <b>MaharaTech</b>.</li>
+            <ul class="certificateList">
+                <li>
+                    <a
+                        href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=259520&code=GuMeZxXPal&qrcode=1"><b>Certificate</b></a>
+                </li>
+                <li>
+                    <i>January 2023</i>
+                </li>
+            </ul>
+
+        </ul>
+        <hr>
+        <ul class="certificateContent">
+            <li>MERN Stack Developer, <b>MaharaTech</b>.</li>
+            <ul class="certificateList">
+                <li>
+                    <a
+                        href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=469694&code=UtNAI86iuW&qrcode=1"><b>Certificate</b></a>
+                </li>
+                <li>
+                    <i>January 2023</i>
+                </li>
+            </ul>
+
+        </ul>
+
     </div>
     <hr>
     <div id="recommendationsSection">
+
         <h2>Recommendations</h2>
+
+
+
         <div id="recommendCard">
 
             <div class="recommendCard">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <h5>Good Person</h5>
 
@@ -151,7 +335,7 @@
             </div>
             <div class="recommendCard">
                 <p>
-                    Lorem ipsum dolor. 
+                    Lorem ipsum dolor.
                 </p>
                 <h5>Paulo Kehlou</h5>
             </div>
@@ -159,9 +343,9 @@
         <div id="leaveRecommendationSection">
 
             <h2>Leave a Recommendation</h2>
-            <input type="text" placeholder="Name (optional)" id="txtName">
+            <input type="text" placeholder="Name (optional)" id="txtName" class="recommendInput">
             <br>
-            <textarea placeholder="Message" cols="11" rows="11" id=txtRecommendation></textarea>
+            <textarea placeholder="Message" cols="11" rows="11" id=txtRecommendation class="recommendInput"></textarea>
             <button onclick="leaveRecommend()"> Submit</button>
         </div>
     </div>
