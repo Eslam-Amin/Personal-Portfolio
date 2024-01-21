@@ -6,9 +6,9 @@ const saveToLocalStorage = () => {
 }
 
 function retrieveDataFromLocalStorage() {
-    recommendationArr = [];
-    recommendationArr = JSON.parse(localStorage.getItem("recommendationArr"));
-    console.log(recommendationArr, "in retrieving data");
+    let arr = JSON.parse(localStorage.getItem("recommendationArr"));
+    recommendationArr = recommendationArr.concat(...arr);
+
 }
 
 retrieveDataFromLocalStorage();
