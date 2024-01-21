@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    text-justify: auto;
 }
 
 nav {
@@ -100,6 +101,7 @@ animation: rect 25s linear alternate infinite;
 .info img {
     width: 15px;
     height: 12px;
+    margin-right: 5px;
 }
 
 .info p {
@@ -274,7 +276,7 @@ hr {
 .certificateContent{
     margin-top:15px;
 }
-.certifications {
+.certificates {
     margin: auto;
     width: 75%;
     margin-top: 50px;
@@ -420,7 +422,12 @@ margin-bottom: 10px;
     padding :5px;
 }
 @media only screen and (max-width: 600px){
-
+    #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
+        width: 90%;
+    }
+    #projectsSection h2,#skillsSection h2, .certificates h2 ,#recommendationsSection h2{
+        text-align: center;
+    }
     #pageTabs{
         display: none;
     }
@@ -432,11 +439,12 @@ margin-bottom: 10px;
         justify-content: center;
     }
     #personalInfo{
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin-left: 0;
+        align-items: center;
        
     }
     
@@ -458,13 +466,15 @@ margin-bottom: 10px;
         margin-top: 20px;
     }
     .aboutMeSectionLinks ul{
-                flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
      .aboutMeSectionLinks ul li{
         margin:10px;
-        width: 50%;
+        width: 100%;
+        
+        
     }
 
     #skillCard{
@@ -476,10 +486,12 @@ margin-bottom: 10px;
 
     .certificateList{
         width: 100%;
-            justify-content:   space-between;
-            margin: 0;
-            flex-direction: column;
-
+        justify-content:   space-between;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .certificateName{
+        margin-left: 20px;
     }
     
     #recommendCard {
