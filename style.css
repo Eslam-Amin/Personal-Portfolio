@@ -269,6 +269,7 @@ hr {
 .projectContent ul>:first-child{
     font-size: 17px;
 }
+
 .projectContent ul li{
     line-height: 1.4;
     margin: 5px;
@@ -514,3 +515,5 @@ margin-bottom: 10px;
         width: 100%;
     }
 }
+
+
